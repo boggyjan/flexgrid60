@@ -68,7 +68,7 @@ gulp.task('css', ['clean'], function() {
         .on('error', sass.logError))
         .pipe(postcss(processors))
         .on('error', handleError)
-        .pipe(sourcemaps.write())
+        //.pipe(sourcemaps.write())
         .pipe(gulp.dest('dist/css'))
         .pipe(connect.reload());
 });
