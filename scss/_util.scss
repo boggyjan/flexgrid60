@@ -1,0 +1,14 @@
+@mixin list-all-cols($grids) {
+  $selectors: '';
+  
+  @for $i from 1 through $grids {
+    $selectors: $selectors + '.fx-lg-' + $i + ',' +
+                             '.fx-md-' + $i + ',' +
+                             '.fx-sm-' + $i + ',' +
+                             '.fx-xs-' + $i + ',';
+  }
+
+  #{$selectors} {
+    @content;
+  };
+}

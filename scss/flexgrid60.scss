@@ -1,0 +1,45 @@
+@import 'util';
+
+.fx-row {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+@include list-all-cols(60) {
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+}
+
+@for $i from 1 through 60 {
+  .fx-xs-#{$i} {
+    box-sizing: border-box;
+    padding: 0;
+    width: 100% / 60 * $i;
+  }
+}
+
+@media (min-width: 768px) {
+  @for $i from 1 through 60 {
+    .fx-sm-#{$i} {
+      width: 100% / 60 * $i;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  @for $i from 1 through 60 {
+    .fx-md-#{$i} {
+      width: 100% / 60 * $i;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  @for $i from 1 through 60 {
+    .fx-lg-#{$i} {
+      width: 100% / 60 * $i;
+    }
+  }
+}
