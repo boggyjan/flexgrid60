@@ -14,8 +14,6 @@
 
 @for $i from 1 through 60 {
   .fx-xs-#{$i} {
-    box-sizing: border-box;
-    padding: 0;
     width: 100% / 60 * $i;
   }
 }
