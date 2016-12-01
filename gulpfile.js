@@ -8,7 +8,6 @@ var rmHtmlComm   = require('gulp-remove-html-comments');
 var rmEmptyLn    = require('gulp-remove-empty-lines');
 var prettify     = require('gulp-html-prettify');
 var htmlhint     = require("gulp-htmlhint");
-var imagemin     = require('gulp-imagemin');
 var sourcemaps   = require('gulp-sourcemaps');
 var rename       = require('gulp-rename');
 var gutil        = require('gulp-util');
