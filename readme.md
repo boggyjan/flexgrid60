@@ -25,3 +25,6 @@
   <div class="fx-lg-30 fx-sm-20 fx-xs-60">...</div>
 </div>
 ```
+
+## Demo
+https://boggyjan.github.io/flexgrid60/dist/
